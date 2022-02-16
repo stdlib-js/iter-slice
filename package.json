@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/iter-slice",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Create an iterator which returns a subsequence of iterated values from a provided iterator.",
   "license": "Apache-2.0",
   "author": {
