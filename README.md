@@ -63,7 +63,9 @@ If no recognized module system is present, access bundle contents via the global
 ```html
 <script type="text/javascript">
 (function () {
+(function () {
     window.iterSlice;
+})();
 })();
 </script>
 ```
@@ -175,6 +177,7 @@ var bool = it.next().done;
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/iter-slice@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
+(function () {
 
 var rand;
 var it;
@@ -197,6 +200,7 @@ while ( true ) {
     console.log( r.value );
 }
 
+})();
 })();
 </script>
 </body>
@@ -303,9 +307,9 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/iter/first]: https://github.com/stdlib-js/iter-first/tree/umd
+[@stdlib/iter/first]: https://github.com/stdlib-js/iter-first/tree/umd/tree/umd
 
-[@stdlib/iter/head]: https://github.com/stdlib-js/iter-head/tree/umd
+[@stdlib/iter/head]: https://github.com/stdlib-js/iter-head/tree/umd/tree/umd
 
 <!-- </related-links> -->
 
