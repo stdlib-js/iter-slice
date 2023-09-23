@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import iterSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-slice@esm/index.mjs';
+import iterSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-slice@v0.1.0-esm/index.mjs';
 ```
 
 #### iterSlice( iterator\[, begin\[, end]] )
@@ -161,7 +161,7 @@ var bool = it.next().done;
 <script type="module">
 
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-randu@esm/index.mjs';
-import iterSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-slice@esm/index.mjs';
+import iterSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-slice@v0.1.0-esm/index.mjs';
 
 // Create a seeded iterator for generating pseudorandom numbers:
 var rand = randu({
