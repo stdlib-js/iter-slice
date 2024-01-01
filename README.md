@@ -45,30 +45,14 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/iter-slice
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var iterSlice = require( '@stdlib/iter-slice' );
+import iterSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-slice@esm/index.mjs';
 ```
 
 #### iterSlice( iterator\[, begin\[, end]] )
@@ -76,7 +60,7 @@ var iterSlice = require( '@stdlib/iter-slice' );
 Returns an [iterator][mdn-iterator-protocol] which returns a subsequence of iterated values from a provided [iterator][mdn-iterator-protocol].
 
 ```javascript
-var array2iterator = require( '@stdlib/array-to-iterator' );
+import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@esm/index.mjs';
 
 var it = iterSlice( array2iterator( [ 1, 2, 3, 4 ] ) );
 // returns <Object>
@@ -101,7 +85,7 @@ The returned [iterator][mdn-iterator-protocol] protocol-compliant object has the
 By default, the returned [iterator][mdn-iterator-protocol] returns a provided [iterator's][mdn-iterator-protocol] first iterated value through an [iterator's][mdn-iterator-protocol] last iterated value. To specify an alternative start iteration index (zero-based and **inclusive**), provide a `begin` argument.
 
 ```javascript
-var array2iterator = require( '@stdlib/array-to-iterator' );
+import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@esm/index.mjs';
 
 var it = iterSlice( array2iterator( [ 1, 2, 3, 4 ] ), 2 );
 // returns <Object>
@@ -119,7 +103,7 @@ var bool = it.next().done;
 By default, the returned [iterator][mdn-iterator-protocol] continues iterating until it consumes all of a provided [iterator's][mdn-iterator-protocol] iterated values. To specify an end iteration index (zero-based and **non-inclusive**), provide an `end` argument.
 
 ```javascript
-var array2iterator = require( '@stdlib/array-to-iterator' );
+import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@esm/index.mjs';
 
 var it = iterSlice( array2iterator( [ 1, 2, 3, 4 ] ), 1, 3 );
 // returns <Object>
@@ -137,7 +121,7 @@ var bool = it.next().done;
 If `begin` is greater than or equal to `end`, the returned [iterator][mdn-iterator-protocol] does not return any iterated values.
 
 ```javascript
-var array2iterator = require( '@stdlib/array-to-iterator' );
+import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@esm/index.mjs';
 
 var it = iterSlice( array2iterator( [ 1, 2, 3, 4 ] ), 3, 1 );
 // returns <Object>
@@ -170,9 +154,14 @@ var bool = it.next().done;
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var randu = require( '@stdlib/random-iter-randu' );
-var iterSlice = require( '@stdlib/iter-slice' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="module">
+
+import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-randu@esm/index.mjs';
+import iterSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-slice@esm/index.mjs';
 
 // Create a seeded iterator for generating pseudorandom numbers:
 var rand = randu({
@@ -191,6 +180,10 @@ while ( true ) {
     }
     console.log( r.value );
 }
+
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -229,7 +222,7 @@ while ( true ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -293,9 +286,9 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/iter/first]: https://github.com/stdlib-js/iter-first
+[@stdlib/iter/first]: https://github.com/stdlib-js/iter-first/tree/esm
 
-[@stdlib/iter/head]: https://github.com/stdlib-js/iter-head
+[@stdlib/iter/head]: https://github.com/stdlib-js/iter-head/tree/esm
 
 <!-- </related-links> -->
 
