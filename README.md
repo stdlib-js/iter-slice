@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import iterSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-slice@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/iter-slice/tags). For example,
+
+```javascript
 import iterSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-slice@v0.2.2-esm/index.mjs';
 ```
 
@@ -161,7 +166,7 @@ var bool = it.next().done;
 <script type="module">
 
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-randu@esm/index.mjs';
-import iterSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-slice@v0.2.2-esm/index.mjs';
+import iterSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-slice@esm/index.mjs';
 
 // Create a seeded iterator for generating pseudorandom numbers:
 var rand = randu({
